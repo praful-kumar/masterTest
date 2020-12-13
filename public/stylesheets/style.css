@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Product Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+
+}
+
+#back>img{
+    margin-top: 120px;
+}
+
+#container{
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#container h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#container img{
+    box-shadow: 0 50px 65px -5px #29d4ffd2;
+    margin-top: 30px;
+}
+
+#container h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 120px;
+}
+
+#posts{
+    margin-top: 50px;
+}
+
+.post{
+    position: relative;
+    width: 700px;
+    min-height: 100px;
+    background-color: #eeee;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post>h5{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(11, 97, 119);
+    text-transform: capitalize;
+}
+
+#icons{
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+#icons a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #fff;
+    color: black;
+   
+}
+#icons a{
+    text-decoration: none;
+}
+
+#icons a:nth-child(1) i:nth-child(1){
+    background-color: rgb(206, 151, 48);
+    color: #fff;
+}
+
+#icons a i:nth-last-child(1){
+    background-color: rgb(209, 29, 29);
+    color: #fff;
+}

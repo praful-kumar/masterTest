@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/write.css">
+</head>
+<body>
+    <div id="back">
+        <img src="../images/redghead.png" alt=""> 
+        <div id="container">
+            <h1>Please write your thoughts here :</h1>
+            <form id="frm" action="/writeposts"  method="POST">
+                <textarea placeholder="Your Thoughts" name="post"></textarea>
+            </form>
+            <img id="img" src="../images/Group 2.png" alt="">
+        </div>
+    </div>
+    <script>
+        document.querySelector('#img').addEventListener('click',()=>{
+        document.querySelector('#frm').submit();
+        })
+    </script>
+</body>
+</html>

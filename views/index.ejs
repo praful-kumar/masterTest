@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <div id="back">
+        <img src="../images/redghead.png" alt=""> 
+        <div id="container">
+            <h1>Got Something to say ?</h1>
+            <a href="/write"><img src="../images/Group 2.png" alt=""></a>
+            <h2>or you can read what others have<br>to say -</h2>
+            <div id="posts">
+                <%if(posts.length <1){ %>
+                   <div class="post"> 
+                        <p>no post Avilable</p>
+                        <div id="icons">
+                            <i class="ri-pencil-fill"></i>
+                            <i class="ri-delete-bin-line"></i>
+                        </div>
+                <%} else {%>
+                    <% posts.reverse().forEach((post)=>{%>
+                       <div class="post">
+                            <h5><%=post.post%></h5>
+                            <div id="icons">  
+                                <a href=<%=/update/+post._id%>><i class="ri-pencil-fill"></i></a>
+                                <a href=<%=/delete/+post._id%>><i class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </div>
+                    <%})%>
+                <%}%>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
